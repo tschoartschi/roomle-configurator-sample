@@ -1,0 +1,24 @@
+{
+    "name": "roomle-configurator-sample",
+    "version": "1.0.0",
+    "description": "This repo is a demo how to use the roomle configurator",
+    "main": "index.js",
+    "scripts": {
+        "serve": "node node_modules/http-server/bin/http-server",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tschoartschi/roomle-configurator-sample.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/tschoartschi/roomle-configurator-sample/issues"
+    },
+    "homepage": "https://github.com/tschoartschi/roomle-configurator-sample#readme",
+    "devDependencies": {
+        "roomle-configurator-v2": "git+https://github.com/Roomle/configurator-api-v2.git#0.0.20",
+        "http-server": "0.11.1"
+    }
+}

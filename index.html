@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roomle Configurator Sample</title>
+</head>
+<body>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: lightblue;
+    }
+
+    #roomle-configurator {
+        position: absolute;
+        top: 10vh;
+        left: 10vw;
+        width: 80vw;
+        height: 80vh;
+    }
+</style>
+
+<div id="roomle-configurator">
+
+</div>
+
+<script src="node_modules/roomle-configurator-v2/dist/roomle-configurator-api.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', async function () {
+        try {
+            await RoomleConfigurator.init('demoConfigurator', 'roomle-configurator', 'usm:frame:BB3BB3E7951BC15109B1FF86D78C95DE3FB46E9F78714C46FFA2DE91866A2C2B', {});
+        } catch (error) {
+            console.error(error);
+        }
+    });
+</script>
+</body>
+</html>
